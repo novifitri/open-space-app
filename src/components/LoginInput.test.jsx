@@ -7,11 +7,11 @@
  *   - should call login function when login button is clicked
  */
 import React from 'react'
-import { afterEach, describe, it } from 'vitest'
-import { render, screen } from '@testing-library/react'
-import LoginInput from './LoginInput'
-import matchers from '@testing-library/jest-dom/matchers'
+import { describe, it, expect, afterEach, vi } from 'vitest'
+import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+import matchers from '@testing-library/jest-dom/matchers'
+import LoginInput from './LoginInput'
 
 expect.extend(matchers)
 
